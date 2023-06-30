@@ -4,7 +4,7 @@ import React from "react";
 
 const Title = ({ title }) => {
   return (
-    <div className="py-5 text-2xl font-bold text-white ">
+    <div className="py-5 text-2xl font-bold text-red-600 ">
       <div className="flex flex-col items-center justify-center gap-1">
         <img
           src="/static/images/rlogo.jpg"

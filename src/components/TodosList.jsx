@@ -48,17 +48,17 @@ const handleDateVal = (todo) => {
           <input
             type="text"
             value={todo.title}
-            className={"text-2xl text-white bg-transparent border-b-2 border-transparent focus:outline-none" + (todo.completed ? " line-through text-gray-400" : "")}
+            className={"text-2xl text-wblack bg-transparent border-b-2 border-transparent focus:outline-none" + (todo.completed ? " line-through text-gray-400" : "")}
             onChange={(e) => event.preventDefault()}
           />
           <input
             type="text"
             value={handleDateVal(todo) + ' days left'}
-            className={"text-2xl text-white bg-transparent border-b-2 border-transparent focus:outline-none" + (todo.completed ? " line-through text-gray-400" : "")}
+            className={"text-2xl text-black bg-transparent border-b-2 border-transparent focus:outline-none" + (todo.completed ? " line-through text-gray-400" : "")}
             onChange={(e) => event.preventDefault()}
           />
           <div className="flex gap-4">
-            <button className="text-2xl text-red-400" onClick={()=>handleDone(todo)}>
+            <button className="text-2xl text-red-600" onClick={()=>handleDone(todo)}>
               <FontAwesomeIcon icon={faCheckCircle} />
             </button>
             <button className="text-2xl text-yellow-500" onClick={()=>handleEdit(todo)}>

@@ -17,7 +17,7 @@ function App() {
   }, [todos]);
 
   return (
-    <div className="h-screen bg-amber-500">
+    <div className="h-screen bg-black">
       <Box className={"justify-items-center "}>
         
         <Title title="Todo-List" />

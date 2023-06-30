@@ -64,13 +64,13 @@ const Form = ({
       <input
         type="text"
         placeholder="Enter a Todo"
-        className="px-4 py-3 mx-5 my-5 text-lg text-white bg-black border border-gray-400 rounded-lg "
+        className="px-4 py-3 mx-5 my-5 text-lg text-black bg-cyan-400 border border-black rounded-lg placeholder:text-black "
         value={val}
         required
         onChange={onInputChange}
       />
       <DatePicker
-        className="px-4 py-3 mx-5 my-5 text-lg text-white bg-black border border-gray-400 rounded-lg "
+        className="px-4 py-3 mx-5 my-5 text-lg text-black bg-cyan-400 border border-black rounded-lg placeholder:text-black "
         selected={date}
         onChange={date => onDateChange(date)}
         placeholderText="Select a date"
@@ -82,7 +82,7 @@ const Form = ({
     </div>
       <button
         type="submit"
-        className="h-full px-5 py-3 text-lg rounded-lg bg-amber-500"
+        className="h-full px-5 py-3 text-lg rounded-lg bg-cyan-400"
       >
         {editTodo ? "Edit" : "Add"}
       </button>
